@@ -1,0 +1,179 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard";
+  line-height: normal;
+  overflow-x: hidden;
+  background-color: rgb(17, 17, 17);
+}
+
+.project_link {
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project_link a {
+  padding: 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .home::before {
+  content: "KIMJIHYANG";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .home:hover::before {
+  content: "김지향";
+  margin-right: 55px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .project::before {
+  content: "Project";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .project:hover::before {
+  content: "프로젝트";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .project:hover::after {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .info::before {
+  content: "Info";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .info:hover::before {
+  content: "정보";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav .nav_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 400;
+  padding-block: 8px;
+  padding-inline: 16px;
+}
+
+.project_container {
+  width: auto;
+  height: auto;
+  margin-block: 18px;
+  margin-inline: 160px;
+  padding-inline: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.project_container .text {
+  margin-block: 20px;
+}
+.project_container .text .text_title {
+  display: flex;
+  color: whitesmoke;
+  align-items: flex-end;
+  gap: 10px;
+}
+.project_container .text .text_title .title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.project_container .text .text_title .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  border-radius: 8px;
+  padding-inline: 8px;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 160px;
+  text-align: center;
+}
+.img img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.img video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+p {
+  color: whitesmoke;
+  line-height: 170%;
+  margin-inline: 0px;
+  margin-block: 18px;
+}
+
+.p_text {
+  color: whitesmoke;
+  line-height: 170%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.p_text .p_text_K {
+  max-width: 45%;
+}
+.p_text .p_text_E {
+  max-width: 55%;
+}
+
+.img_flex {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 10px;
+}
+.img_flex img {
+  width: 32.8%;
+  flex-direction: row;
+}
