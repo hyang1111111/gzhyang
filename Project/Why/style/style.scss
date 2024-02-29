@@ -110,6 +110,7 @@ body {
 .img {
   width: fit-content;
   margin: 0;
+  margin-top: 16px;
   margin-bottom: 160px;
   img {
     width: 100%;
@@ -145,7 +146,7 @@ p {
   flex-grow: 1;
   flex-basis: 0;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-block: 30px;
   .p_text_K {
     max-width: 45%;
   }
