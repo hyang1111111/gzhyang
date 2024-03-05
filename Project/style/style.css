@@ -82,9 +82,12 @@ body a {
 }
 
 .project_container {
-  width: auto;
-  height: auto;
-  margin-block: 18px;
+  width: 1440px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 8px;
+  margin-bottom: 80px;
   margin-inline: 160px;
   padding-inline: 18px;
   display: flex;
