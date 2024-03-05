@@ -142,3 +142,55 @@ video {
   overflow: hidden;
   padding: 6px;
 }
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 18px;
+
+    .project_section {
+      display: flex;
+      min-width: 375px;
+      flex-direction: row;
+      margin: 8px;
+      gap: 40px;
+    }
+    .project_contents {
+      display: flex;
+      flex-direction: row;
+    }
+    .project_container {
+      display: flex;
+      min-width: 375px;
+      flex-direction: row;
+      margin: 8px;
+    }
+    .p_text .text_container .text_category {
+      min-width: 375px;
+      margin: 0;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      .p_text_K {
+        display: flex;
+        max-width: 375px;
+      }
+      .p_text_E {
+        display: flex;
+        max-width: 375px;
+      }
+      .text_title {
+        display: flex;
+        width: fit-content;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}

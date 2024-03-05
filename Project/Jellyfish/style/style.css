@@ -203,3 +203,31 @@ p {
   width: 32.8%;
   flex-direction: row;
 }
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  body .project_container {
+    display: flex;
+    min-width: 375px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 16px;
+  }
+  body .p_text {
+    min-width: 375px;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .p_text .p_text_K {
+    display: flex;
+    max-width: 375px;
+  }
+  body .p_text .p_text_E {
+    display: flex;
+    max-width: 375px;
+  }
+}

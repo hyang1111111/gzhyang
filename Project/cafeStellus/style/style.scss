@@ -131,3 +131,31 @@ p {
   margin-inline: 0px;
   margin-block: 18px;
 }
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    .project_container {
+      display: flex;
+      min-width: 375px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 16px;
+    }
+    .p_text {
+      min-width: 375px;
+      margin: 0;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .p_text_K {
+        display: flex;
+        max-width: 375px;
+      }
+      .p_text_E {
+        display: flex;
+        max-width: 375px;
+      }
+    }
+  }
+}
