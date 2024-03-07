@@ -108,20 +108,22 @@ body {
 }
 
 .img {
-  width: fit-content;
-  margin: 0;
-  margin-top: 16px;
+  width: 100%;
+  margin: auto;
   margin-bottom: 160px;
+  text-align: center;
   img {
     width: 100%;
     height: auto;
     margin: 0;
-    padding-bottom: 8px;
+    padding: 0;
+    vertical-align: top;
   }
   video {
     width: 100%;
-    height: auto;
+    height: fit-content;
     margin: 0;
+    vertical-align: bottom;
   }
 }
 
@@ -146,10 +148,10 @@ p {
   align-items: flex-start;
   margin-block: 38px;
   .p_text_K {
-    max-width: 45%;
+    max-width: 50%;
   }
   .p_text_E {
-    max-width: 55%;
+    max-width: 50%;
   }
 }
 
@@ -179,7 +181,7 @@ p {
       margin: 16px;
     }
     .p_text {
-      max-width: 375px;
+      min-width: 375px;
       margin: 0;
       flex-direction: column;
       flex-wrap: wrap;
