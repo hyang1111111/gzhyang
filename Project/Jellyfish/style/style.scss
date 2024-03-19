@@ -107,25 +107,6 @@ body {
   }
 }
 
-// .img {
-//   width: 100%;
-//   margin: auto;
-//   text-align: center;
-//   img {
-//     width: 100%;
-//     height: auto;
-//     margin: 0;
-//     padding: 0;
-//     vertical-align: top;
-//   }
-//   video {
-//     width: 100%;
-//     height: auto;
-//     margin: 0;
-//     vertical-align: bottom;
-//   }
-// }
-
 img {
   width: 100%;
   vertical-align: bottom;
@@ -213,28 +194,84 @@ p {
 }
 
 @media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
   body {
     display: flex;
     flex-direction: column;
+    .project {
+      max-width: 375px;
+    }
     .project_container {
       display: flex;
-      max-width: 375px;
+      max-width: 370px;
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
+      padding-inline: 2px;
+    }
+    img {
+      max-width: 343px;
+    }
+    iframe {
+      max-width: 343px;
+    }
+    .button_container {
+      max-width: 343px;
+    }
+    .button_section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: fit-content;
+      }
+    }
+    .img_flex {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .button_text {
+      display: flex;
+      flex-direction: colum;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 6px;
+      span {
+        margin-inline: 8px;
+      }
     }
     .p_text {
-      max-width: 375px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      text-justify: auto;
+      .text_title {
+        flex-direction: column;
+      }
+    }
+    .p_text {
       margin: 0;
       flex-direction: column;
       flex-wrap: wrap;
       .p_text_K {
         display: flex;
-        max-width: 375px;
+        max-width: fit-content;
       }
       .p_text_E {
         display: flex;
-        max-width: 375px;
+        max-width: fit-content;
       }
     }
   }

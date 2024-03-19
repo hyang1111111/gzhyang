@@ -153,12 +153,22 @@ video {
     display: flex;
     flex-direction: column;
   }
+  body img {
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   body .project_container {
     display: flex;
     max-width: 375px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 16px;
+    margin: 0;
+    padding-inline: 24px;
+    gap: 24px;
   }
   body .p_text {
     max-width: 375px;
