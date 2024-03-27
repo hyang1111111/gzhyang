@@ -82,7 +82,7 @@ body a {
 }
 
 .project_container {
-  width: 1440px;
+  max-width: 1440px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -95,7 +95,7 @@ body a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 18px;
+  gap: 24px;
   padding-top: 10px;
 }
 .project_container .project_contents {
@@ -126,6 +126,13 @@ body a {
   font-size: 18px;
   margin-block: 4px;
   margin-inline: 6px;
+  line-height: 132%;
+  font-weight: 500;
+}
+.project_container .project_contents .text_container .text_title span {
+  font-weight: 400;
+  color: whitesmoke;
+  opacity: 48%;
 }
 
 .img {
@@ -146,6 +153,12 @@ video {
   max-height: 400px;
   overflow: hidden;
   padding: 6px;
+}
+
+.project_contents_section :hover {
+  color: darkgray;
+  opacity: 80%;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {

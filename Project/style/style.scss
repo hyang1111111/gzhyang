@@ -81,7 +81,7 @@ body {
 }
 
 .project_container {
-  width: 1440px;
+  max-width: 1440px;
   height: fit-content;
   margin-top: 8px;
   margin-bottom: 80px;
@@ -92,7 +92,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 18px;
+  gap: 24px;
   padding-top: 10px;
   .project_contents {
     display: grid;
@@ -118,6 +118,13 @@ body {
         font-size: 18px;
         margin-block: 4px;
         margin-inline: 6px;
+        line-height: 132%;
+        font-weight: 500;
+        span {
+          font-weight: 400;
+          color: whitesmoke;
+          opacity: 48%;
+        }
       }
     }
   }
@@ -141,6 +148,12 @@ video {
   max-height: 400px;
   overflow: hidden;
   padding: 6px;
+}
+
+.project_contents_section :hover {
+  color: darkgray;
+  opacity: 80%;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
