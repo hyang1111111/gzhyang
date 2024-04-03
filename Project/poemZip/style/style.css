@@ -229,6 +229,7 @@ p {
   }
   body iframe {
     max-width: 343px;
+    max-height: 198px;
   }
   body .button_container {
     max-width: 343px;

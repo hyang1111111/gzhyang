@@ -204,6 +204,7 @@ p {
   }
   body iframe {
     max-width: 375px;
+    max-height: 198px;
   }
   body .img_flex {
     display: flex;
