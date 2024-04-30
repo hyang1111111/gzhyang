@@ -123,3 +123,13 @@ a::after {
 .main .text span {
   color: whitesmoke;
 }
+
+.tool {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.tool img {
+  width: 80px;
+  height: auto;
+}
