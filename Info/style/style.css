@@ -136,6 +136,7 @@ a::after {
   flex-direction: row;
   gap: 16px;
   padding-inline: 32px;
+  margin-bottom: 64px;
 }
 .main .tool img {
   width: 100px;
@@ -162,6 +163,7 @@ a::after {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
+    gap: 0;
   }
   body .main .profile {
     max-width: 375px;

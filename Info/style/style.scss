@@ -132,6 +132,7 @@ a::after {
     flex-direction: row;
     gap: 16px;
     padding-inline: 32px;
+    margin-bottom: 64px;
     img {
       width: 100px;
       height: 100px;
@@ -159,6 +160,7 @@ a::after {
       flex-direction: column;
       flex-wrap: wrap;
       margin: 0;
+      gap: 0;
       .profile {
         max-width: 375px;
         .profile_img {
