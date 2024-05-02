@@ -93,7 +93,12 @@ body {
 .project_container .text .text_title {
   display: flex;
   color: whitesmoke;
-  align-items: flex-end;
+  gap: 16px;
+  flex-direction: column;
+}
+.project_container .text .text_title .tag {
+  display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 .project_container .text .text_title .title {
@@ -221,62 +226,47 @@ p {
     display: flex;
     flex-direction: column;
   }
-  body .project {
-    max-width: 375px;
-  }
   body .project_container {
     display: flex;
     max-width: 375px;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 16px;
-    padding: 0;
-  }
-  body .project_section {
-    max-width: 375px;
-  }
-  body img {
-    max-width: 375px;
-  }
-  body iframe {
-    max-width: 375px;
   }
   body .img_flex {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 10px;
   }
   body .img_flex img {
-    width: 100%;
+    width: 31.1%;
+    flex-direction: row;
   }
-  body .text {
+  body .tag {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
   }
   body .p_text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  body .text_title {
     max-width: 375px;
-    flex-direction: column;
-  }
-  body .p_text {
     margin: 0;
     flex-direction: column;
     flex-wrap: wrap;
   }
   body .p_text .p_text_K {
     display: flex;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 375px;
   }
   body .p_text .p_text_E {
     display: flex;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 375px;
   }
 }

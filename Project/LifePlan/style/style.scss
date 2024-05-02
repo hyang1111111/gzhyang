@@ -90,8 +90,13 @@ body {
     .text_title {
       display: flex;
       color: whitesmoke;
-      align-items: flex-end;
-      gap: 10px;
+      gap: 16px;
+      flex-direction: column;
+      .tag {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+      }
       .title {
         font-size: 30px;
         font-weight: 600;
@@ -169,26 +174,78 @@ p {
   }
 }
 
+// @media (max-width: 480px) {
+//   body {
+//     display: flex;
+//     flex-direction: column;
+//     .project {
+//       max-width: 375px;
+//     }
+//     .project_container {
+//       display: flex;
+//       max-width: 375px;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       margin: 16px;
+//       padding: 0;
+//     }
+//     .project_section {
+//       max-width: 375px;
+//     }
+//     img {
+//       max-width: 375px;
+//     }
+//     iframe {
+//       max-width: 375px;
+//       max-height: 198px;
+//     }
+//     .img_flex {
+//       display: flex;
+//       flex-direction: column;
+//       img {
+//         width: 100%;
+//       }
+//     }
+//     .text {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//     }
+//     .p_text {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//     }
+//     .text_title {
+//       max-width: 375px;
+//       flex-direction: column;
+//     }
+//     .p_text {
+//       margin: 0;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       .p_text_K {
+//         display: flex;
+//         max-width: fit-content;
+//       }
+//       .p_text_E {
+//         display: flex;
+//         max-width: fit-content;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
-    .project {
-      max-width: 375px;
-    }
     .project_container {
       display: flex;
       max-width: 375px;
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
-      padding: 0;
-    }
-    .project_section {
-      max-width: 375px;
-    }
-    img {
-      max-width: 375px;
     }
     iframe {
       max-width: 375px;
@@ -201,31 +258,18 @@ p {
         width: 100%;
       }
     }
-    .text {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
     .p_text {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    .text_title {
       max-width: 375px;
-      flex-direction: column;
-    }
-    .p_text {
       margin: 0;
       flex-direction: column;
       flex-wrap: wrap;
       .p_text_K {
         display: flex;
-        max-width: fit-content;
+        max-width: 375px;
       }
       .p_text_E {
         display: flex;
-        max-width: fit-content;
+        max-width: 375px;
       }
     }
   }

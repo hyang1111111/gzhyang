@@ -90,11 +90,17 @@ body {
     .text_title {
       display: flex;
       color: whitesmoke;
-      align-items: flex-end;
-      gap: 10px;
+      gap: 16px;
+      flex-direction: column;
       .title {
+        display: flex;
+        flex-direction: column;
         font-size: 30px;
         font-weight: 600;
+      }
+      .tag {
+        display: flex;
+        gap: 10px;
       }
       .category {
         width: fit-content;
@@ -205,6 +211,11 @@ p {
         width: calc(31.1%);
         flex-direction: row;
       }
+    }
+    .tag {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .p_text {
       max-width: 375px;

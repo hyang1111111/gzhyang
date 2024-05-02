@@ -180,17 +180,24 @@ p {
       flex-wrap: wrap;
       margin: 16px;
     }
+    // .img_flex {
+    //   width: fit-content;
+    //   height: fit-content;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   flex-wrap: wrap;
+    //   gap: 10px;
+    //   margin-block: 10px;
+    //   img {
+    //     width: calc(31.1%);
+    //     flex-direction: row;
+    //   }
+    // }
     .img_flex {
-      width: fit-content;
-      height: fit-content;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-block: 10px;
+      flex-direction: column;
       img {
-        width: calc(31.1%);
-        flex-direction: row;
+        width: 100%;
       }
     }
     .p_text {

@@ -143,6 +143,8 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-block: 38px;
+  flex-grow: 1;
+  flex-basis: 0;
   .p_text_K {
     max-width: 100%;
   }
@@ -165,29 +167,72 @@ p {
   }
 }
 
+// @media (max-width: 480px) {
+//   body {
+//     display: flex;
+//     flex-direction: column;
+//     .project_container {
+//       display: flex;
+//       max-width: 375px;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       margin: 16px;
+//     }
+//     img {
+//       max-width: 375px;
+//     }
+//     iframe {
+//       max-width: 375px;
+//       max-height: 198px;
+//     }
+//     .img_flex {
+//       display: flex;
+//       flex-direction: column;
+//       img {
+//         width: 100%;
+//       }
+//     }
+//     .text {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//     }
+//     .p_text {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       max-width: 375px;
+//       margin: 0;
+//     }
+//     .text_title {
+//       max-width: 375px;
+//       flex-direction: column;
+//     }
+//     .p_text_K {
+//       display: flex;
+//       max-width: 375px;
+//     }
+//     .p_text_E {
+//       display: flex;
+//       max-width: 375px;
+//     }
+//   }
+// }
+
 @media (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
-    .project {
-      max-width: 375px;
-    }
     .project_container {
       display: flex;
       max-width: 375px;
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
-      padding: 0;
-    }
-    .project_section {
-      max-width: 375px;
-    }
-    img {
-      max-width: 375px;
     }
     iframe {
       max-width: 375px;
+      max-height: 198px;
     }
     .img_flex {
       display: flex;
@@ -196,31 +241,18 @@ p {
         width: 100%;
       }
     }
-    .text {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
     .p_text {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    .text_title {
       max-width: 375px;
-      flex-direction: column;
-    }
-    .p_text {
       margin: 0;
       flex-direction: column;
       flex-wrap: wrap;
       .p_text_K {
         display: flex;
-        max-width: fit-content;
+        max-width: 375px;
       }
       .p_text_E {
         display: flex;
-        max-width: fit-content;
+        max-width: 375px;
       }
     }
   }

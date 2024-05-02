@@ -193,21 +193,11 @@ p {
     margin: 16px;
   }
   body .img_flex {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-block: 10px;
+    flex-direction: column;
   }
   body .img_flex img {
-    width: 31.1%;
-    flex-direction: row;
+    width: 100%;
   }
   body .p_text {
     max-width: 375px;

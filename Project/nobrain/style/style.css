@@ -93,12 +93,18 @@ body {
 .project_container .text .text_title {
   display: flex;
   color: whitesmoke;
-  align-items: flex-end;
-  gap: 10px;
+  gap: 16px;
+  flex-direction: column;
 }
 .project_container .text .text_title .title {
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
   font-weight: 600;
+}
+.project_container .text .text_title .tag {
+  display: flex;
+  gap: 10px;
 }
 .project_container .text .text_title .category {
   width: -webkit-fit-content;
@@ -225,6 +231,11 @@ p {
   body .img_flex img {
     width: 31.1%;
     flex-direction: row;
+  }
+  body .tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   body .p_text {
     max-width: 375px;
