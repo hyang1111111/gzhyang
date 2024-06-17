@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -7,78 +6,140 @@
 
 body {
   margin: 0;
-  font-family: "Pretendard";
+  font-family: "Neue Haas Grotesk Display Pro";
   line-height: normal;
   overflow-x: hidden;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(255, 255, 255);
 }
 body a {
   text-decoration: none;
 }
 
-.project_link {
+.nav {
+  border-bottom: 1.5px solid rgb(17, 17, 17);
+}
+.nav a {
   text-decoration: none;
-  color: whitesmoke;
-  border-radius: 30px;
-  border: 1px solid whitesmoke;
+  color: rgb(17, 17, 17);
+  font-family: "Tiqui Taca";
+  font-weight: 400;
+  font-style: normal;
+}
+.nav .page_link {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.nav .page_link p {
+  font-size: 30px;
+  margin: 0%;
+  padding-top: 6px;
+  flex-wrap: wrap;
+}
+.nav .page_link a {
+  padding: 8px;
+}
+.nav .work_link {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.nav .work_link p {
+  font-size: 24px;
+  margin: 0%;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+.nav .work_link a {
+  padding: 8px;
+}
+.nav .info_link {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.nav .info_link p {
+  font-size: 28px;
+  margin: 0%;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+.nav .info_link a {
+  padding: 8px;
+}
+.nav .insta_link {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.nav .insta_link a {
+  padding: 8px;
+}
+.nav .home::before {
+  content: "Hyang";
+  text-decoration: none;
+  color: rgb(17, 17, 17);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.project_link a {
-  padding: 8px;
-  text-decoration: none;
-}
-
-.nav a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .home::before {
-  content: "KIMJIHYANG";
-  text-decoration: none;
-  color: whitesmoke;
-}
 .nav .home:hover::before {
-  content: "김지향";
-  margin-right: 55px;
+  content: "Hyang";
   text-decoration: none;
-  color: whitesmoke;
+  color: #646464;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.nav .project::before {
-  content: "Project";
+.nav .work::before {
+  content: "Work";
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(17, 17, 17);
 }
-.nav .project:hover::before {
-  content: "프로젝트";
+.nav .work:hover::before {
+  content: "Work";
   text-decoration: none;
-  color: whitesmoke;
+  color: #646464;
 }
-.nav .project:hover::after {
+.nav .work:hover::after {
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(17, 17, 17);
 }
 .nav .info::before {
-  content: "Info";
+  content: "Resume";
   text-decoration: none;
-  color: whitesmoke;
+  color: #111111;
 }
 .nav .info:hover::before {
-  content: "정보";
+  content: "Resume";
   text-decoration: none;
-  color: whitesmoke;
+  color: #646464;
 }
 .nav .nav_container {
   display: flex;
   justify-content: space-between;
-  margin: 16px;
-  font-family: "Pretendard";
-  font-size: 18px;
+  margin: 12px;
+  font-size: 32px;
   font-weight: 400;
-  padding-block: 8px;
+  padding-top: 16px;
+  padding-bottom: 6px;
   padding-inline: 16px;
-  text-decoration: none;
 }
 
 .project_container {
@@ -146,6 +207,12 @@ img {
   max-height: 400px;
   overflow: hidden;
   padding: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 video {

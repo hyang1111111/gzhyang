@@ -12,81 +12,123 @@ body {
   background-color: black;
 }
 
-.info_link {
-  text-decoration: none;
-  color: whitesmoke;
-  border-radius: 30px;
-  border: 1px solid whitesmoke;
-  width: fit-content;
-  a {
-    padding: 8px;
-  }
-}
-
-a {
-  color: whitesmoke;
-  text-decoration-line: none;
-}
-
-a:hover {
-  color: darkgray;
-}
-
-a::after {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
 .nav {
+  border-bottom: 1.5px solid whitesmoke;
   a {
     text-decoration: none;
     color: whitesmoke;
+    font-family: 'Tiqui Taca';
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .page_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    p {
+      font-size: 30px;
+      margin: 0%;
+      padding-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      padding: 8px;
+    }
+  }
+  .work_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    p {
+      font-size: 24px;
+      margin: 0%;
+      padding-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      padding: 8px;
+    }
+  }
+  .info_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    p {
+      font-size: 28px;
+      margin: 0%;
+      padding-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      padding: 8px;
+    }
+  }
+  .insta_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      padding: 8px;
+    }
   }
 
   .home::before {
-    content: 'KIMJIHYANG';
+    content: 'Hyang';
     text-decoration: none;
     color: whitesmoke;
     width: fit-content;
   }
   .home:hover::before {
-    content: '김지향';
+    content: 'Hyang';
     text-decoration: none;
-    color: whitesmoke;
+    color: #646464;
     width: fit-content;
   }
-  .project::before {
-    content: 'Project';
+  .work::before {
+    content: 'Work';
     text-decoration: none;
     color: whitesmoke;
   }
-  .project:hover::before {
-    content: '프로젝트';
+  .work:hover::before {
+    content: 'Work';
     text-decoration: none;
-    color: whitesmoke;
+    color: #646464;
   }
-  .project:hover::after {
+  .work:hover::after {
     text-decoration: none;
     color: whitesmoke;
   }
   .info::before {
-    content: 'Info';
+    content: 'Resume';
     text-decoration: none;
     color: whitesmoke;
   }
   .info:hover::before {
-    content: '정보';
+    content: 'Resume';
     text-decoration: none;
-    color: whitesmoke;
+    color: #646464;
   }
   .nav_container {
     display: flex;
     justify-content: space-between;
-    margin: 16px;
-    font-family: 'Pretendard';
-    font-size: 18px;
+    margin: 12px;
+    font-size: 32px;
     font-weight: 400;
-    padding-block: 8px;
+    padding-top: 16px;
+    padding-bottom: 6px;
     padding-inline: 16px;
   }
 }
