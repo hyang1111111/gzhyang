@@ -212,10 +212,95 @@ p {
     display: flex;
     flex-direction: column;
   }
-  body .project {
+  body .nav {
+    border-bottom: 1.5px solid whitesmoke;
+  }
+  body .nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Tiqui Taca";
+    font-weight: 400;
+    font-style: normal;
+  }
+  body .nav .page_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  body .nav .page_link p {
+    font-size: 20px;
+    margin: 0%;
+    flex-wrap: wrap;
+  }
+  body .nav .page_link a {
+    padding: 8px;
+  }
+  body .nav .work_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  body .nav .work_link p {
+    font-size: 16px;
+    margin: 0%;
+    flex-wrap: wrap;
+  }
+  body .nav .work_link a {
+    padding: 8px;
+  }
+  body .nav .info_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  body .nav .info_link p {
+    font-size: 18px;
+    margin: 0%;
+    flex-wrap: wrap;
+  }
+  body .nav .info_link a {
+    padding: 8px;
+  }
+  body .nav .insta_link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  body .nav .insta_link a {
+    padding: 8px;
+  }
+  body .nav .nav_container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 4px;
+    margin-inline: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-inline: 16px;
+    align-items: center;
+  }
+  body .nav .project {
     max-width: 375px;
   }
-  body .project_container {
+  body .nav .project_container {
     display: flex;
     max-width: 370px;
     flex-direction: column;
@@ -223,70 +308,70 @@ p {
     margin: 16px;
     padding-inline: 2px;
   }
-  body img {
+  body .nav img {
     max-width: 343px;
   }
-  body iframe {
+  body .nav iframe {
     max-width: 343px;
   }
-  body .button_container {
+  body .nav .button_container {
     max-width: 343px;
   }
-  body .button_section {
+  body .nav .button_section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
   }
-  body .button_section img {
+  body .nav .button_section img {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  body .img_flex {
+  body .nav .img_flex {
     display: flex;
     flex-direction: column;
   }
-  body .img_flex img {
+  body .nav .img_flex img {
     width: 100%;
   }
-  body .text {
+  body .nav .text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  body .button_text {
+  body .nav .button_text {
     display: flex;
     flex-direction: colum;
     flex-wrap: wrap;
     justify-content: center;
     padding: 6px;
   }
-  body .button_text span {
+  body .nav .button_text span {
     margin-inline: 8px;
   }
-  body .p_text {
+  body .nav .p_text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
     text-justify: auto;
   }
-  body .p_text .text_title {
+  body .nav .p_text .text_title {
     flex-direction: column;
   }
-  body .p_text {
+  body .nav .p_text {
     margin: 0;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  body .p_text .p_text_K {
+  body .nav .p_text .p_text_K {
     display: flex;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
-  body .p_text .p_text_E {
+  body .nav .p_text .p_text_E {
     display: flex;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;

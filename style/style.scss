@@ -15,128 +15,82 @@ body {
 
 :root {
   --unit: 1vw;
-  --swiper-theme-color: #007aff;
 }
 
 .nav {
-  border-bottom: 1.5px solid whitesmoke;
-  a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Tiqui Taca';
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .page_link {
-    text-decoration: none;
-    color: whitesmoke;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    p {
-      font-size: 30px;
-      margin: 0%;
-      padding-top: 6px;
-      flex-wrap: wrap;
-    }
-
-    a {
-      padding: 8px;
-    }
-  }
-  .work_link {
-    text-decoration: none;
-    color: whitesmoke;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    p {
-      font-size: 24px;
-      margin: 0%;
-      padding-top: 8px;
-      flex-wrap: wrap;
-    }
-
-    a {
-      padding: 8px;
-    }
-  }
-  .info_link {
-    text-decoration: none;
-    color: whitesmoke;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    p {
-      font-size: 28px;
-      margin: 0%;
-      padding-top: 8px;
-      flex-wrap: wrap;
-    }
-
-    a {
-      padding: 8px;
-    }
-  }
-  .insta_link {
-    text-decoration: none;
-    color: whitesmoke;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-
-    a {
-      padding: 8px;
-    }
-  }
-
-  .home::before {
-    content: 'Hyang';
-    text-decoration: none;
-    color: whitesmoke;
-    width: fit-content;
-  }
-  .home:hover::before {
-    content: 'Hyang';
-    text-decoration: none;
-    color: #646464;
-    width: fit-content;
-  }
-  .work::before {
-    content: 'Work';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .work:hover::before {
-    content: 'Work';
-    text-decoration: none;
-    color: #646464;
-  }
-  .work:hover::after {
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .info::before {
-    content: 'Resume';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .info:hover::before {
-    content: 'Resume';
-    text-decoration: none;
-    color: #646464;
-  }
+  border-bottom: 1.4px solid whitesmoke;
   .nav_container {
     display: flex;
     justify-content: space-between;
     margin: 12px;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 18px;
     padding-top: 16px;
     padding-bottom: 6px;
     padding-inline: 16px;
   }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: 18px;
+    font-weight: 500;
+    font-style: oblique;
+  }
+
+  .link {
+    text-decoration: none;
+    color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    p {
+      font-size: 18px;
+      margin: 0%;
+      flex-wrap: wrap;
+    }
+    a {
+      padding-top: 2px;
+      padding-left: 8px;
+    }
+  }
+}
+
+.home::before {
+  content: 'Hyang';
+  text-decoration: none;
+  color: whitesmoke;
+  width: fit-content;
+}
+.home:hover::before {
+  content: 'Hyang';
+  text-decoration: none;
+  color: #646464;
+  width: fit-content;
+}
+.work::before {
+  content: 'Work';
+  text-decoration: none;
+  color: whitesmoke;
+}
+.work:hover::before {
+  content: 'Work';
+  text-decoration: none;
+  color: #646464;
+}
+.work:hover::after {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.info::before {
+  content: 'About';
+  text-decoration: none;
+  color: whitesmoke;
+}
+.info:hover::before {
+  content: 'About';
+  text-decoration: none;
+  color: #646464;
 }
 
 .marquee {
@@ -146,7 +100,7 @@ body {
   .marquee_box {
     width: fit-content;
     height: fit-content;
-    border: 3px solid #fff;
+    border: 3px solid whitesmoke;
     .marquee_text {
       margin-inline: 6px;
       margin-block: 4px;
@@ -177,7 +131,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 160px;
   margin-inline: 160px;
   padding-block: 80px;
   padding-inline: 48px;
@@ -185,39 +138,31 @@ body {
   text-align: center;
 
   .recapcha {
-    background: #000;
+    background: rgb(17, 17, 17);
     width: 375px;
     height: fit-content;
     margin: 0 auto;
-    color: #fff;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    color: whitesmoke;
     z-index: 2;
 
     .recapcha_title {
       position: absolute;
-      left: 50%;
-      transform: translate(-50%);
       bottom: 100%;
       white-space: nowrap;
-      padding-bottom: 18px;
       h1 {
         font-size: 40px;
-        color: #fff;
+        color: whitesmoke;
         margin-top: 0;
       }
     }
 
     .recapcha_inner {
-      border: 1px solid black;
-      background: #fff;
-      border: 3px solid #fff;
-      margin-bottom: 30px;
+      border: 1px solid rgb(17, 17, 17);
+      background: whitesmoke;
+      border: 3px solid whitesmoke;
 
       .recapcha_header {
-        background: #0083f9;
+        background: rgb(56, 56, 56);
         padding-inline: 24px;
         padding-block: 18px;
         display: flex;
@@ -285,8 +230,8 @@ body {
         }
 
         .verify {
-          background: #0083f9;
-          color: #fff;
+          background: rgb(56, 56, 56);
+          color: whitesmoke;
           padding-inline: 16px;
           padding-block: 10px;
           font-size: 18px;
@@ -325,236 +270,73 @@ img {
   body {
     display: flex;
     flex-direction: column;
+    .nav_container {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 4px;
+      margin-inline: 12px;
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 12px;
+      padding-bottom: 2px;
+      padding-inline: 16px;
+      align-items: center;
+    }
 
     .recapcha {
-      background: #000;
-      width: 320px;
+      max-width: 312px;
+      max-height: auto;
       margin: 0 auto;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-
-      .recapcha_title {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 100%;
-        white-space: nowrap;
-        padding-bottom: 18px;
-        h1 {
-          font-size: 20px;
-          color: #fff;
-          margin-top: 0;
-        }
-      }
-
-      .recapcha_inner {
-        border: 1px solid black;
-        background: #fff;
-        border: 3px solid #fff;
-        margin-bottom: 30px;
-
-        .recapcha_header {
-          background: #0083f9;
-          padding: 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-
-          span {
-            font-size: 18px;
-          }
-
-          h2 {
-            font-size: 18px;
-            line-height: 108%;
-            letter-spacing: 1px;
-            margin-block: 10px;
-          }
-        }
-
-        .recapcha_body {
-          display: grid;
-          gap: 2px;
-          justify-content: center;
-          grid-template-columns: repeat(3, 1fr);
-          height: 100%;
-          padding: calc(10 / 1800 * 100 * var(--unit));
-          .recapcha_img {
-            display: flex;
-            img {
-              width: 100%;
-              object-fit: cover;
-              overflow: clip;
-            }
-          }
-        }
-
-        .recapcha_footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 8px;
-          padding-top: 0;
-
-          .icon {
-            display: flex;
-            flex-direction: row;
-            vertical-align: middle;
-            gap: 8px;
-            .reset {
-              display: flex;
-              width: 28px;
-              padding: 2.2px;
-            }
-            .headphone {
-              display: flex;
-              width: 28px;
-              padding: 2px;
-            }
-            .info {
-              display: flex;
-              width: 28px;
-              padding: 2px;
-            }
-          }
-
-          .verify {
-            background: #0083f9;
-            color: #fff;
-            padding-inline: 16px;
-            padding-block: 10px;
-            font-size: 10px;
-            font-weight: 600;
-            cursor: pointer;
-          }
-        }
+      color: whitesmoke;
+      span {
+        text-align: left;
       }
     }
 
-    .nav {
-      border-bottom: 1.5px solid whitesmoke;
-      a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-family: 'Tiqui Taca';
-        font-weight: 400;
-        font-style: normal;
-      }
+    .marquee {
+      max-width: 375px;
+      height: auto;
+    }
 
-      .page_link {
-        text-decoration: none;
-        color: whitesmoke;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        p {
-          font-size: 20px;
-          margin: 0%;
-          flex-wrap: wrap;
-        }
+    .main {
+      display: flex;
+      flex-direction: column;
+      max-width: 375px;
+      max-width: auto;
+      margin-inline: 24px;
+      margin-bottom: 24px;
+      padding: 8px;
+      justify-content: center;
+      text-align: center;
+    }
 
-        a {
-          padding: 8px;
-        }
-      }
-      .work_link {
-        text-decoration: none;
-        color: whitesmoke;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        p {
-          font-size: 16px;
-          margin: 0%;
-          flex-wrap: wrap;
-        }
-
-        a {
-          padding: 8px;
-        }
-      }
-      .info_link {
-        text-decoration: none;
-        color: whitesmoke;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        p {
-          font-size: 18px;
-          margin: 0%;
-          flex-wrap: wrap;
-        }
-
-        a {
-          padding: 8px;
-        }
-      }
-      .insta_link {
-        text-decoration: none;
-        color: whitesmoke;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-
-        a {
-          padding: 8px;
-        }
-      }
-
-      .nav_container {
-        display: flex;
-        justify-content: space-between;
-        margin-block: 4px;
-        margin-inline: 12px;
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 12px;
-        padding-bottom: 2px;
-        padding-inline: 16px;
-        align-items: center;
-      }
-
-      .main {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        margin-inline: 24px;
-        padding-block: 48px;
-        padding-inline: 8px;
-        max-width: 375px;
-      }
-      .line {
-        display: flex;
-        max-width: 375px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        gap: 24px;
-      }
-      img {
-        width: 100%;
-        max-width: 375px;
-      }
-      .text {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: left;
-        font-size: 40px;
-        font-weight: 600;
-      }
-      .outtext {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: center;
-        font-size: 24px;
-      }
+    .line {
+      display: flex;
+      max-width: 375px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      gap: 24px;
+    }
+    img {
+      width: 100%;
+      max-width: 375px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: left;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .outtext {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 24px;
     }
   }
 }

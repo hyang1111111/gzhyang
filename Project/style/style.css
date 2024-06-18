@@ -9,137 +9,97 @@ body {
   font-family: "Neue Haas Grotesk Display Pro";
   line-height: normal;
   overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(17, 17, 17);
 }
 body a {
   text-decoration: none;
 }
 
 .nav {
-  border-bottom: 1.5px solid rgb(17, 17, 17);
-}
-.nav a {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  font-family: "Tiqui Taca";
-  font-weight: 400;
-  font-style: normal;
-}
-.nav .page_link {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .page_link p {
-  font-size: 30px;
-  margin: 0%;
-  padding-top: 6px;
-  flex-wrap: wrap;
-}
-.nav .page_link a {
-  padding: 8px;
-}
-.nav .work_link {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .work_link p {
-  font-size: 24px;
-  margin: 0%;
-  padding-top: 8px;
-  flex-wrap: wrap;
-}
-.nav .work_link a {
-  padding: 8px;
-}
-.nav .info_link {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .info_link p {
-  font-size: 28px;
-  margin: 0%;
-  padding-top: 8px;
-  flex-wrap: wrap;
-}
-.nav .info_link a {
-  padding: 8px;
-}
-.nav .insta_link {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .insta_link a {
-  padding: 8px;
-}
-.nav .home::before {
-  content: "Hyang";
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.nav .home:hover::before {
-  content: "Hyang";
-  text-decoration: none;
-  color: #646464;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.nav .work::before {
-  content: "Work";
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-}
-.nav .work:hover::before {
-  content: "Work";
-  text-decoration: none;
-  color: #646464;
-}
-.nav .work:hover::after {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-}
-.nav .info::before {
-  content: "Resume";
-  text-decoration: none;
-  color: #111111;
-}
-.nav .info:hover::before {
-  content: "Resume";
-  text-decoration: none;
-  color: #646464;
+  border-bottom: 1.4px solid whitesmoke;
 }
 .nav .nav_container {
   display: flex;
   justify-content: space-between;
   margin: 12px;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 18px;
   padding-top: 16px;
   padding-bottom: 6px;
   padding-inline: 16px;
+}
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.nav .link {
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+}
+.nav .link p {
+  font-size: 18px;
+  margin: 0%;
+  flex-wrap: wrap;
+}
+.nav .link a {
+  padding-top: 2px;
+  padding-left: 8px;
+}
+
+.home::before {
+  content: "Hyang";
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.home:hover::before {
+  content: "Hyang";
+  text-decoration: none;
+  color: #646464;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.work::before {
+  content: "Work";
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.work:hover::before {
+  content: "Work";
+  text-decoration: none;
+  color: #646464;
+}
+
+.work:hover::after {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.info::before {
+  content: "About";
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.info:hover::before {
+  content: "About";
+  text-decoration: none;
+  color: #646464;
 }
 
 .project_container {
@@ -207,12 +167,6 @@ img {
   max-height: 400px;
   overflow: hidden;
   padding: 6px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-img:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 video {
@@ -232,6 +186,18 @@ video {
   body {
     display: flex;
     flex-direction: column;
+  }
+  body .nav_container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 4px;
+    margin-inline: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-inline: 16px;
+    align-items: center;
   }
   body img {
     max-height: 100%;

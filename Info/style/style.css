@@ -13,130 +13,90 @@ body {
 }
 
 .nav {
-  border-bottom: 1.5px solid whitesmoke;
-}
-.nav a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-family: "Tiqui Taca";
-  font-weight: 400;
-  font-style: normal;
-}
-.nav .page_link {
-  text-decoration: none;
-  color: whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .page_link p {
-  font-size: 30px;
-  margin: 0%;
-  padding-top: 6px;
-  flex-wrap: wrap;
-}
-.nav .page_link a {
-  padding: 8px;
-}
-.nav .work_link {
-  text-decoration: none;
-  color: whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .work_link p {
-  font-size: 24px;
-  margin: 0%;
-  padding-top: 8px;
-  flex-wrap: wrap;
-}
-.nav .work_link a {
-  padding: 8px;
-}
-.nav .info_link {
-  text-decoration: none;
-  color: whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .info_link p {
-  font-size: 28px;
-  margin: 0%;
-  padding-top: 8px;
-  flex-wrap: wrap;
-}
-.nav .info_link a {
-  padding: 8px;
-}
-.nav .insta_link {
-  text-decoration: none;
-  color: whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.nav .insta_link a {
-  padding: 8px;
-}
-.nav .home::before {
-  content: "Hyang";
-  text-decoration: none;
-  color: whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.nav .home:hover::before {
-  content: "Hyang";
-  text-decoration: none;
-  color: #646464;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.nav .work::before {
-  content: "Work";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .work:hover::before {
-  content: "Work";
-  text-decoration: none;
-  color: #646464;
-}
-.nav .work:hover::after {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .info::before {
-  content: "Resume";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .info:hover::before {
-  content: "Resume";
-  text-decoration: none;
-  color: #646464;
+  border-bottom: 1.4px solid whitesmoke;
 }
 .nav .nav_container {
   display: flex;
   justify-content: space-between;
   margin: 12px;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 18px;
   padding-top: 16px;
   padding-bottom: 6px;
   padding-inline: 16px;
+}
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.nav .link {
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+}
+.nav .link p {
+  font-size: 18px;
+  margin: 0%;
+  flex-wrap: wrap;
+}
+.nav .link a {
+  padding-top: 2px;
+  padding-left: 8px;
+}
+
+.home::before {
+  content: "Hyang";
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.home:hover::before {
+  content: "Hyang";
+  text-decoration: none;
+  color: #646464;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.work::before {
+  content: "Work";
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.work:hover::before {
+  content: "Work";
+  text-decoration: none;
+  color: #646464;
+}
+
+.work:hover::after {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.info::before {
+  content: "About";
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.info:hover::before {
+  content: "About";
+  text-decoration: none;
+  color: #646464;
 }
 
 .background {
