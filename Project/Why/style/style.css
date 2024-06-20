@@ -6,7 +6,8 @@
 
 body {
   margin: 0;
-  font-family: "Pretendard";
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 400;
   line-height: normal;
   overflow-x: hidden;
   background-color: rgb(17, 17, 17);
@@ -57,7 +58,7 @@ body {
 }
 .project_container .text .text_title .title {
   font-size: 42px;
-  font-weight: 400;
+  font-weight: 0;
 }
 .project_container .text .text_title .category_box {
   width: -webkit-fit-content;
