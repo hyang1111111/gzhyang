@@ -172,6 +172,24 @@ video {
   cursor: pointer;
 }
 
+.footer {
+  border-top: 1.4px solid whitesmoke;
+  color: whitesmoke;
+  .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 0;
+    padding-inline: 16px;
+    p {
+      padding-inline: 8px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   body {
     .nav_container {
@@ -202,6 +220,7 @@ video {
       flex-wrap: wrap;
       margin: 0;
       padding-inline: 24px;
+      padding-bottom: 16px;
       gap: 24px;
     }
     .p_text {

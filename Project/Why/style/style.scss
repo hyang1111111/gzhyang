@@ -25,11 +25,12 @@ body {
   .contents_text {
     width: auto;
     margin: 0;
-    padding-inline: 185px;
     text-align: center;
     p {
+      width: 720px;
       word-break: keep-all;
       padding-block: 8px;
+      padding-inline: 16px;
       text-align: center;
     }
   }
@@ -146,6 +147,7 @@ p {
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
+      padding: 4px;
     }
     .contents_box {
       background-color: black;
@@ -160,12 +162,14 @@ p {
       .contents_text {
         width: auto;
         margin: 0;
-        padding-inline: 24px;
+        padding-inline: 0;
         text-align: left;
         p {
+          width: 320px;
           word-break: keep-all;
           padding-block: 8px;
-          text-align: center;
+          padding-inline: 8px;
+          text-align: left;
         }
       }
     }

@@ -9,12 +9,7 @@ body {
   font-family: 'Neue Haas Grotesk Display Pro';
   font-weight: 400;
   font-style: normal;
-  overflow-x: hidden;
   background-color: rgb(17, 17, 17);
-}
-
-:root {
-  --unit: 1vw;
 }
 
 .nav {
@@ -105,26 +100,6 @@ body {
       margin-inline: 6px;
       margin-block: 4px;
     }
-  }
-}
-
-::-moz-selection {
-  background: transparent;
-}
-
-::selection {
-  background: transparent;
-}
-
-.filters {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 1;
-  background-repeat: inherit;
-  img {
-    opacity: 60%;
-    background-repeat: repeat;
   }
 }
 
@@ -264,6 +239,24 @@ body {
 img {
   width: 35%;
   margin: 0;
+}
+
+.footer {
+  border-top: 1.4px solid whitesmoke;
+  color: whitesmoke;
+  .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 0;
+    padding-inline: 16px;
+    p {
+      padding-inline: 8px;
+    }
+  }
 }
 
 @media (max-width: 480px) {

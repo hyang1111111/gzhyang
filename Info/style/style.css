@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Pretendard";
+  font-family: "Neue Haas Grotesk Display Pro";
   line-height: normal;
   overflow-x: hidden;
   background-color: black;
@@ -114,46 +114,107 @@ body {
   display: flex;
   justify-content: center;
   margin: 16px;
+  margin-bottom: 42px;
 }
-.main .title {
-  margin: 16px;
-  padding-inline: 16px;
-  font-size: 30px;
-  font-weight: 600;
-  color: whitesmoke;
-}
-.main .text {
-  font-size: 24px;
-  margin-left: 16px;
-  margin-right: 16px;
-  padding-inline: 16px;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  color: rgb(220, 220, 220);
-}
-.main .text span {
-  color: rgb(220, 220, 220);
-}
-.main .tool {
+.main .profile {
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  padding-inline: 32px;
-  margin-bottom: 64px;
+  gap: 64px;
 }
-.main .tool img {
-  width: 100px;
-  height: 100px;
+.main .left {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
-.main .profile_img {
-  margin: 16px;
-  padding-inline: 16px;
-  width: 375px;
+.main .left h1 {
+  font-size: 36px;
+}
+.main .left .profile_img {
+  margin: 0;
+  padding: 0;
+  width: 240px;
   height: auto;
 }
-.main .profile_img img {
+.main .left .profile_img img {
   width: 100%;
   height: 100%;
+}
+.main .right {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+.main .right p {
+  font-weight: 600;
+  margin-block: 32px;
+  margin-right: 4px;
+}
+.main .right .about_box {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.main .right .about_box .about {
+  display: flex;
+  flex-direction: column;
+}
+.main .right .title {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.main .right .text {
+  margin: 0;
+  padding: 0;
+}
+.main .right .text .span_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.main .right .text .span_box .p_box {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+}
+.main .right .text span {
+  font-size: 18px;
+  padding-right: 16px;
+  margin-block: 4px;
+}
+.main .right .text .tool {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row;
+  flex-basis: 3;
+}
+.main .right .text p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-block: 4px;
+}
+
+.footer {
+  border-top: 1.4px solid whitesmoke;
+  color: whitesmoke;
+}
+.footer .footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-block: 0;
+  padding-inline: 16px;
+}
+.footer .footer_container p {
+  padding-inline: 8px;
 }
 
 @media (max-width: 480px) {
@@ -169,33 +230,90 @@ body {
     gap: 0;
   }
   body .main .profile {
+    display: flex;
     max-width: 375px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 16px;
   }
-  body .main .profile .profile_img {
-    margin-inline: 16px;
-    padding-inline: 16px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-  }
-  body .main .tool {
-    max-width: 375px;
-    height: auto;
-    width: 100px;
+  body .main .left {
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 80px;
+    justify-content: center;
   }
-  body .main .tool .tool_set {
+  body .main .left h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  body .main .left .profile_img {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: auto;
+  }
+  body .main .left .profile_img img {
+    width: 100%;
+    height: 100%;
+  }
+  body .main .right {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main .right p {
+    font-weight: 600;
+    margin-block: 32px;
+  }
+  body .main .right .about_box {
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .right .about_box .about {
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .right .about_box .about_info {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    justify-content: space-between;
   }
-  body .main .tool img {
-    width: 100px;
-    flex-grow: 0;
-    flex-basis: 100px;
+  body .main .right .title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+  }
+  body .main .right .text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  body .main .right .text span {
+    font-size: 18px;
+    padding-right: 16px;
+    margin-bottom: 18px;
+  }
+  body .main .right .text .tool {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+  }
+  body .main .right .text p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-block: 4px;
+    margin-right: 2px;
+  }
+  body .main .right .text .p_box {
+    display: flex;
+    flex-direction: row;
   }
 }

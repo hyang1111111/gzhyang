@@ -26,12 +26,13 @@ body {
 .contents_box .contents_text {
   width: auto;
   margin: 0;
-  padding-inline: 185px;
   text-align: center;
 }
 .contents_box .contents_text p {
+  width: 720px;
   word-break: keep-all;
   padding-block: 8px;
+  padding-inline: 16px;
   text-align: center;
 }
 
@@ -157,6 +158,7 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 16px;
+    padding: 4px;
   }
   body .contents_box {
     background-color: black;
@@ -172,13 +174,15 @@ p {
   body .contents_box .contents_text {
     width: auto;
     margin: 0;
-    padding-inline: 24px;
+    padding-inline: 0;
     text-align: left;
   }
   body .contents_box .contents_text p {
+    width: 320px;
     word-break: keep-all;
     padding-block: 8px;
-    text-align: center;
+    padding-inline: 8px;
+    text-align: left;
   }
   body .img_flex {
     width: -webkit-fit-content;

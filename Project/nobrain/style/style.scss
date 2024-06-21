@@ -160,6 +160,7 @@ p {
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
+      padding: 4px;
     }
     .contents_box {
       margin: 0;
@@ -167,18 +168,17 @@ p {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      align-items: left;
+      align-items: center;
       max-width: 375px;
       flex-wrap: wrap;
       .contents_text {
         width: auto;
         margin: 0;
-        padding-inline: 24px;
-        text-align: left;
+        padding-inline: 0;
         p {
           word-break: keep-all;
           padding-block: 8px;
-          text-align: center;
+          text-align: left;
         }
       }
     }
@@ -191,8 +191,21 @@ p {
       gap: 10px;
       margin-block: 10px;
       img {
-        width: calc(31.1%);
-        flex-direction: row;
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+    .img_two {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-block: 10px;
+      img {
+        width: 100%;
+        flex-direction: column;
       }
     }
     .tag {
