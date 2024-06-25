@@ -147,6 +147,24 @@ p {
   flex-direction: row;
 }
 
+.footer {
+  border-top: 1.4px solid whitesmoke;
+  color: whitesmoke;
+}
+.footer .footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-block: 0;
+  padding-inline: 16px;
+}
+.footer .footer_container p {
+  padding-inline: 8px;
+}
+
 @media (max-width: 480px) {
   body {
     display: flex;
