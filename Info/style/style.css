@@ -217,6 +217,23 @@ body {
   padding-inline: 8px;
 }
 
+.capcha_box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.capcha_box .text_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+.capcha_box img {
+  max-width: 240px;
+  max-height: auto;
+}
+
 @media (max-width: 480px) {
   body .main {
     display: flex;
@@ -242,6 +259,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 8px;
   }
   body .main .left h1 {
     text-align: center;

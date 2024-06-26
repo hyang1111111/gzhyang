@@ -12,73 +12,31 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
-.project_link {
-  text-decoration: none;
-  color: whitesmoke;
-  border-radius: 30px;
-  border: 1px solid whitesmoke;
-  width: fit-content;
-  a {
-    padding: 8px;
-  }
-}
-.nav {
-  a {
-    text-decoration: none;
-    color: whitesmoke;
-  }
-
-  .home::before {
-    content: 'KIMJIHYANG';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .home:hover::before {
-    content: '김지향';
-    margin-right: 55px;
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .project::before {
-    content: 'Project';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .project:hover::before {
-    content: '프로젝트';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .project:hover::after {
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .info::before {
-    content: 'Info';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .info:hover::before {
-    content: '정보';
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .nav_container {
-    display: flex;
-    justify-content: space-between;
-    margin: 16px;
-    font-family: 'Pretendard';
-    font-size: 18px;
-    font-weight: 400;
-    padding-block: 8px;
-    padding-inline: 16px;
+.contents_box {
+  width: auto;
+  margin: 0;
+  padding-block: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contents_text {
+    width: auto;
+    margin: 0;
+    padding-inline: 185px;
+    text-align: center;
+    p {
+      word-break: keep-all;
+      padding-block: 8px;
+      text-align: center;
+    }
   }
 }
 
 .project_container {
   width: auto;
   height: auto;
-  margin-block: 18px;
+  margin-block: 36px;
   margin-inline: 160px;
   padding-inline: 18px;
   display: flex;
@@ -90,18 +48,25 @@ body {
     .text_title {
       display: flex;
       color: whitesmoke;
-      align-items: flex-end;
-      gap: 10px;
+      align-items: center;
+      gap: 16px;
+      flex-direction: column;
       .title {
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 42px;
+        font-weight: 00;
       }
-      .category {
+      .category_box {
         width: fit-content;
         height: fit-content;
-        color: white;
-        border-radius: 8px;
-        padding-inline: 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        .category {
+          color: whitesmoke;
+          border: 1.4px solid whitesmoke;
+          border-radius: 32px;
+          padding-inline: 8px;
+        }
       }
     }
   }
@@ -134,27 +99,6 @@ p {
   margin-block: 18px;
 }
 
-.p_text {
-  color: whitesmoke;
-  line-height: 170%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  flex-basis: 0;
-  align-items: flex-start;
-  margin-block: 38px;
-  .p_text_K {
-    max-width: 50%;
-  }
-  .p_text_E {
-    max-width: 50%;
-  }
-}
-
 .img_flex {
   width: fit-content;
   height: fit-content;
@@ -166,6 +110,24 @@ p {
   img {
     width: calc(32.8%);
     flex-direction: row;
+  }
+}
+
+.footer {
+  border-top: 1.4px solid whitesmoke;
+  color: whitesmoke;
+  .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 0;
+    padding-inline: 16px;
+    p {
+      padding-inline: 8px;
+    }
   }
 }
 

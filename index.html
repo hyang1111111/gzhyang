@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KIMJIHYANG</title>
     <link rel="stylesheet" href="style/style.css" />
+    <script src="./index.js"></script>
     <link rel="icon" href="./assets/favicon.png" />
   </head>
   <body>
@@ -63,48 +64,64 @@
 
     <div class="main">
       <div class="recapcha">
-        <!-- <div class="recapcha_title"><h1>Verify Hyang's Portfoilo</h1></div> -->
+        <div id="myModal" class="modal">
+          <div class="modal_content">
+            <span class="close">&times;</span>
+            <div class="modal_headear">
+              관찰하며 이야기하는 디자이너가 되고 싶습니다.
+            </div>
+            <div class="modal_text">
+              UI/UX디자인, BX/BI디자인, 모션그래픽, 2D그래픽, 편집/인쇄디자인,
+              패키지디자인 등 다양하게 배우고 각 분야에 대한 이해도를
+              높였습니다. 저는 배움이 빠르고 새로운 프로그램을 접하고 시도해보길
+              좋아하는 성격이라 졸업작품 때 처음 HTML과 CSS를 처음 접했고 이
+              프로그램을 활용해 졸업작품을 진행하고자 꾸준히 학습하였습니다.
+              또한 Ai에도 관심이 있어 Ai를 활용한 이미지 생성을 활용해
+              졸업작품을 완성시켰습니다. 처음 접한 이후로도 프로그래밍 언어를
+              활용한 그래픽에 대해 끊임없이 공부하며 작업하고 있습니다. 또한
+              저는 빠르게 바뀌는 디자인의 트렌드를 파악하기 위해 매일 다양한
+              SNS를 확인하고 자료를 아카이빙하는데 그 일이 매우 즐겁습니다. 현재
+              타이포그래피와 HTML, CSS3 등의 프로그래밍 언어를 활용한 디자인에
+              관심이 있어서 SNS에 디자인 계정을 만들어 업로드 중 입니다.
+            </div>
+          </div>
+        </div>
         <div class="recapcha_inner">
           <div class="recapcha_header">
             <span>Select all images with</span>
-            <h2>Hyang's Portfolio</h2>
+            <h2>Hyang's favorite</h2>
             <span>Click verify once there are non left.</span>
           </div>
           <div class="recapcha_body">
-            <a href="https://www.instagram.com/hyangs.zip/" target="_blank">
-              <div class="recapcha_img">
-                <img src="assets/insta.png" alt="false" />
-              </div>
-            </a>
-            <div class="recapcha_img correct">
-              <a
-                href="https://hyang1111111.github.io/gzhyang/Project/nobrain/body.html"
-                target="_blank"></a>
+            <div class="recapcha_img">
+              <img src="assets/eyes_recapcha.jpg" alt="false" />
+            </div>
+
+            <div class="recapcha_img">
               <img src="assets/jellyfish_recapcha.jpg" alt="true" />
             </div>
+
             <div class="recapcha_img">
-              <a
-                href="https://hyang1111111.github.io/gzhyang/Project/Why/index.html"
-                target="_blank"></a>
               <img src="assets/why_recapcha.jpg" alt="false" />
             </div>
-            <div class="recapcha_img correct">
+
+            <div class="recapcha_img">
               <img src="assets/snail_recapcha.jpg" alt="true" />
             </div>
             <div class="recapcha_img">
               <img src="assets/panda_recapcha.jpg" alt="false" />
             </div>
-            <div class="recapcha_img correct">
-              <img src="assets/pray_recapcha.jpg" alt="true" />
+            <div class="recapcha_img">
+              <img src="assets/walking_recapcha.jpg" alt="true" />
             </div>
             <div class="recapcha_img">
-              <img src="assets/insta.png" alt="false" />
+              <img src="assets/travel_recapcha.jpg" alt="false" />
             </div>
             <div class="recapcha_img">
-              <img src="assets/insta.png" alt="false" />
+              <img src="assets/movie_recapcha.jpg" alt="false" />
             </div>
-            <div class="recapcha_img correct">
-              <img src="assets/insta.png" alt="true" />
+            <div class="recapcha_img">
+              <img src="assets/designer_recapcha.jpg" alt="true" />
             </div>
           </div>
           <div class="recapcha_footer">
@@ -156,7 +173,7 @@
                 </svg>
               </div>
             </div>
-            <div class="verify">VERIFY</div>
+            <div id="myBtn" class="verify">VERIFY</div>
           </div>
         </div>
       </div>
@@ -189,4 +206,26 @@
       <p>E-mail : gzhyang1228@gmail.com</p>
     </div>
   </div>
+
+  <script>
+    var modal = document.getElementById('myModal');
+
+    var btn = document.getElementById('myBtn');
+
+    var span = document.getElementsByClassName('close')[0];
+
+    btn.onclick = function () {
+      modal.style.display = 'block';
+    };
+
+    span.onclick = function () {
+      modal.style.display = 'none';
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
 </html>

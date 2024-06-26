@@ -103,6 +103,58 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+a:active::after {
+  text-decoration: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  .modal_content {
+    background-color: rgb(17, 17, 17);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    .modal_headear {
+      padding-block: 24px;
+      border-bottom: 1.4px solid whitesmoke;
+    }
+    .modal_text {
+      padding-top: 26px;
+      padding-bottom: 20px;
+      padding-inline: 20px;
+      word-break: break-all;
+      text-align: left;
+      line-height: 170%;
+    }
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -283,6 +335,38 @@ img {
       color: whitesmoke;
       span {
         text-align: left;
+      }
+    }
+
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+      .modal_content {
+        background-color: rgb(17, 17, 17);
+        margin: 6px auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 360px; /* Could be more or less, depending on screen size */
+        .modal_headear {
+          padding-block: 24px;
+          border-bottom: 1.4px solid whitesmoke;
+        }
+        .modal_text {
+          padding-top: 26px;
+          padding-bottom: 20px;
+          padding-inline: 20px;
+          word-break: break-all;
+          text-align: left;
+          line-height: 170%;
+        }
       }
     }
 
