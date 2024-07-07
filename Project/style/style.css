@@ -209,7 +209,10 @@ video {
     display: flex;
     flex-direction: column;
   }
-  body .nav_container {
+  body .nav {
+    margin-bottom: 14px;
+  }
+  body .nav .nav_container {
     display: flex;
     justify-content: space-between;
     margin-block: 4px;
@@ -239,18 +242,22 @@ video {
     padding-bottom: 16px;
     gap: 24px;
   }
-  body .p_text {
-    max-width: 375px;
-    margin: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .footer {
+    border-top: 1.4px solid whitesmoke;
+    color: whitesmoke;
+    margin-top: 14px;
   }
-  body .p_text .p_text_K {
+  .footer .footer_container {
     display: flex;
-    max-width: 375px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 0;
+    padding-inline: 16px;
   }
-  body .p_text .p_text_E {
-    display: flex;
-    max-width: 375px;
+  .footer .footer_container p {
+    padding-inline: 8px;
   }
 }
