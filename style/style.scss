@@ -225,6 +225,15 @@ a:active::after {
             overflow: clip;
           }
         }
+        .recapcha_img:active {
+          display: flex;
+          border: 4px solid whitesmoke;
+          img {
+            width: 100%;
+            object-fit: cover;
+            overflow: clip;
+          }
+        }
       }
 
       .recapcha_footer {
@@ -259,6 +268,15 @@ a:active::after {
         .verify {
           background: rgb(56, 56, 56);
           color: whitesmoke;
+          padding-inline: 16px;
+          padding-block: 10px;
+          font-size: 18px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .verify:hover {
+          background: rgb(50, 50, 50);
+          color: rgb(40, 40, 40);
           padding-inline: 16px;
           padding-block: 10px;
           font-size: 18px;
