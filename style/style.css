@@ -153,13 +153,26 @@ a:active::after {
   padding-block: 24px;
   border-bottom: 1.4px solid whitesmoke;
 }
+.modal .modal_content .main {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+}
+.modal .modal_content .sub {
+  font-size: 18px;
+  font-weight: 400;
+}
 .modal .modal_content .modal_text {
   padding-top: 26px;
   padding-bottom: 20px;
-  padding-inline: 20px;
+  padding-inline: 40px;
   word-break: break-all;
   text-align: left;
   line-height: 170%;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .close {
