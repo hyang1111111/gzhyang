@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -13,67 +12,22 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
-.project_link {
+.back_section {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: whitesmoke;
-  border-radius: 30px;
-  border: 1px solid whitesmoke;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-.project_link a {
-  padding: 8px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .home::before {
-  content: "KIMJIHYANG";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .home:hover::before {
-  content: "김지향";
-  margin-right: 55px;
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .project::before {
-  content: "Project";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .project:hover::before {
-  content: "프로젝트";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .project:hover::after {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .info::before {
-  content: "Info";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .info:hover::before {
-  content: "정보";
-  text-decoration: none;
-  color: whitesmoke;
-}
-.nav .nav_container {
-  display: flex;
-  justify-content: space-between;
-  margin: 16px;
-  font-family: "Pretendard";
+  margin-inline: 20px;
+  margin-block: 16px;
   font-size: 18px;
-  font-weight: 400;
-  padding-block: 8px;
-  padding-inline: 16px;
+}
+.back_section a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 2px;
 }
 
 .project_container {
@@ -146,27 +100,6 @@ p {
   line-height: 170%;
   margin-inline: 0px;
   margin-block: 18px;
-}
-
-.p_text {
-  color: whitesmoke;
-  line-height: 170%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  flex-basis: 0;
-  align-items: flex-start;
-  margin-block: 38px;
-}
-.p_text .p_text_K {
-  max-width: 50%;
-}
-.p_text .p_text_E {
-  max-width: 50%;
 }
 
 .img_flex {

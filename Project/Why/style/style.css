@@ -6,11 +6,28 @@
 
 body {
   margin: 0;
-  font-family: "Neue Haas Grotesk Display Pro";
-  font-weight: 400;
+  font-family: "Pretendard";
   line-height: normal;
   overflow-x: hidden;
   background-color: rgb(17, 17, 17);
+}
+
+.back_section {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: 20px;
+  margin-block: 16px;
+  font-size: 18px;
+}
+.back_section a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 2px;
 }
 
 .contents_box {

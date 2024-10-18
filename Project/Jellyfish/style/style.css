@@ -12,6 +12,24 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+.back_section {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: 20px;
+  margin-block: 16px;
+  font-size: 18px;
+}
+.back_section a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 2px;
+}
+
 .contents_box {
   width: auto;
   margin: 0;
@@ -141,6 +159,24 @@ p {
 }
 .footer .footer_container p {
   padding-inline: 8px;
+}
+
+.button_section {
+  margin-block: 40px;
+  padding-top: 24px;
+}
+
+button {
+  margin-inline: 8px;
+  margin-block: 36px;
+  padding-inline: 16px;
+  padding-block: 6px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 480px) {
