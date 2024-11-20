@@ -15,16 +15,26 @@ body {
 .back_section {
   display: flex;
   align-items: center;
+  position: fixed;
   text-decoration: none;
   color: whitesmoke;
   width: fit-content;
-  margin-inline: 20px;
-  margin-block: 16px;
+  margin-inline: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 18px;
+  justify-content: center;
+  .back_container {
+    padding: 2px;
+    padding-top: 0;
+  }
+  .material-symbols-outlined {
+    padding: 2px;
+    padding-top: 2px;
+  }
   a {
     text-decoration: none;
     color: whitesmoke;
-    padding: 2px;
   }
 }
 

@@ -13,6 +13,34 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+.back_section {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  text-decoration: none;
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  justify-content: center;
+}
+.back_section .back_container {
+  padding: 2px;
+  padding-top: 0;
+}
+.back_section .material-symbols-outlined {
+  padding: 2px;
+  padding-top: 2px;
+}
+.back_section a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .project_link {
   text-decoration: none;
   color: whitesmoke;
