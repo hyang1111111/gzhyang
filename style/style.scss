@@ -13,7 +13,6 @@ body {
 }
 
 .nav {
-  border-bottom: 1.4px solid whitesmoke;
   .nav_container {
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,6 @@ body {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 18px;
     font-weight: 500;
-    font-style: oblique;
   }
 
   .link {
@@ -38,15 +36,15 @@ body {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    vertical-align: baseline;
+    vertical-align: center;
     p {
       font-size: 18px;
       margin: 0%;
       flex-wrap: wrap;
     }
     a {
-      padding-top: 2px;
-      padding-left: 8px;
+      padding-top: 4px;
+      padding-inline: 4px;
     }
   }
 }
@@ -170,12 +168,24 @@ a:active::after {
 
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-inline: 160px;
   padding-block: 80px;
   padding-inline: 48px;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  .jicho {
+    display: block;
+    position: relative;
+    width: 480px;
+    height: 268px;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   .recapcha {
     background: rgb(17, 17, 17);
@@ -325,7 +335,6 @@ img {
 }
 
 .footer {
-  border-top: 1.4px solid whitesmoke;
   color: whitesmoke;
   .footer_container {
     display: flex;
@@ -357,6 +366,12 @@ img {
       padding-bottom: 2px;
       padding-inline: 16px;
       align-items: center;
+    }
+
+    .main {
+      .jicho {
+        height: 240px;
+      }
     }
 
     .recapcha {

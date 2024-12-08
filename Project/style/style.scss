@@ -16,15 +16,13 @@ body {
 }
 
 .nav {
-  border-bottom: 1.4px solid whitesmoke;
   .nav_container {
     display: flex;
     justify-content: space-between;
-    margin: 12px;
     font-size: 18px;
-    padding-top: 16px;
-    padding-bottom: 6px;
-    padding-inline: 16px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-inline: 36px;
   }
   a {
     text-decoration: none;
@@ -32,7 +30,6 @@ body {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 18px;
     font-weight: 500;
-    font-style: oblique;
   }
 
   img {
@@ -45,15 +42,15 @@ body {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    vertical-align: baseline;
+    align-items: center;
     p {
       font-size: 18px;
       margin: 0%;
       flex-wrap: wrap;
     }
     a {
-      padding-top: 2px;
-      padding-left: 8px;
+      padding-top: 4px;
+      padding-inline: 4px;
     }
   }
 }
@@ -173,7 +170,6 @@ video {
 }
 
 .footer {
-  border-top: 1.4px solid whitesmoke;
   color: whitesmoke;
   .footer_container {
     display: flex;

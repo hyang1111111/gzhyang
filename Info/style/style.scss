@@ -13,7 +13,6 @@ body {
 }
 
 .nav {
-  border-bottom: 1.4px solid whitesmoke;
   .nav_container {
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,6 @@ body {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 18px;
     font-weight: 500;
-    font-style: oblique;
   }
 
   .link {
@@ -38,15 +36,15 @@ body {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    vertical-align: baseline;
+    vertical-align: center;
     p {
       font-size: 18px;
       margin: 0%;
       flex-wrap: wrap;
     }
     a {
-      padding-top: 2px;
-      padding-left: 8px;
+      padding-top: 4px;
+      padding-inline: 4px;
     }
   }
 }
@@ -191,7 +189,6 @@ body {
 }
 
 .footer {
-  border-top: 1.4px solid whitesmoke;
   color: whitesmoke;
   .footer_container {
     display: flex;
