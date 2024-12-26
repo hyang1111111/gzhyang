@@ -194,13 +194,19 @@ a {
     display: flex;
     flex-direction: column;
   }
+  body .back {
+    display: none;
+  }
   body .project_container {
     display: flex;
     max-width: 375px;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 16px;
-    padding: 4px;
+  }
+  body iframe {
+    max-width: 375px;
+    max-height: 198px;
   }
   body .contents_box {
     margin: 0;
@@ -223,56 +229,19 @@ a {
     text-align: left;
   }
   body .img_flex {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-block: 10px;
+    flex-direction: column;
   }
   body .img_flex img {
     width: 100%;
     flex-direction: column;
   }
-  body .img_two {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-block: 10px;
-  }
-  body .img_two img {
-    width: 100%;
-    flex-direction: column;
-  }
-  body .tag {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .p_text {
-    max-width: 375px;
-    margin: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  body .p_text .p_text_K {
-    display: flex;
-    max-width: 375px;
-  }
-  body .p_text .p_text_E {
-    display: flex;
-    max-width: 375px;
+  body button {
+    margin-inline: 8px;
+    margin-block: 8px;
+    padding-inline: 16px;
+    padding-block: 6px;
+    border-radius: 30px;
+    font-size: 18px;
   }
 }

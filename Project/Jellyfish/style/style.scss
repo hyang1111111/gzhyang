@@ -176,17 +176,24 @@ button {
 a {
   text-decoration: none;
 }
+
 @media (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
+    .back {
+      display: none;
+    }
     .project_container {
       display: flex;
       max-width: 375px;
       flex-direction: column;
       flex-wrap: wrap;
       margin: 16px;
-      padding: 4px;
+    }
+    iframe {
+      max-width: 375px;
+      max-height: 198px;
     }
     .contents_box {
       margin: 0;
@@ -209,49 +216,20 @@ a {
       }
     }
     .img_flex {
-      width: fit-content;
-      height: fit-content;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-block: 10px;
+      flex-direction: column;
       img {
         width: 100%;
         flex-direction: column;
       }
     }
-    .img_two {
-      width: fit-content;
-      height: fit-content;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-block: 10px;
-      img {
-        width: 100%;
-        flex-direction: column;
-      }
-    }
-    .tag {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .p_text {
-      max-width: 375px;
-      margin: 0;
-      flex-direction: column;
-      flex-wrap: wrap;
-      .p_text_K {
-        display: flex;
-        max-width: 375px;
-      }
-      .p_text_E {
-        display: flex;
-        max-width: 375px;
-      }
+    button {
+      margin-inline: 8px;
+      margin-block: 8px;
+      padding-inline: 16px;
+      padding-block: 6px;
+      border-radius: 30px;
+      font-size: 18px;
     }
   }
 }

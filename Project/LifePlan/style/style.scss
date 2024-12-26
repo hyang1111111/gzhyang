@@ -143,6 +143,9 @@ p {
   body {
     display: flex;
     flex-direction: column;
+    .back {
+      display: none;
+    }
     .project_container {
       display: flex;
       max-width: 375px;

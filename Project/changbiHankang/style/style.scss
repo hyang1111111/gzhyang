@@ -176,6 +176,9 @@ p {
   body {
     display: flex;
     flex-direction: column;
+    .back {
+      display: none;
+    }
     .project_container {
       display: flex;
       max-width: 375px;
@@ -234,20 +237,6 @@ p {
       display: flex;
       flex-direction: column;
       gap: 10px;
-    }
-    .p_text {
-      max-width: 375px;
-      margin: 0;
-      flex-direction: column;
-      flex-wrap: wrap;
-      .p_text_K {
-        display: flex;
-        max-width: 375px;
-      }
-      .p_text_E {
-        display: flex;
-        max-width: 375px;
-      }
     }
   }
 }
